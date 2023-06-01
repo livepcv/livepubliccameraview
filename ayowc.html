@@ -3,6 +3,11 @@
 <head>
     <link rel="stylesheet" href="mainstyle.css">
 <style>
+    div {
+        text-align: center;
+        margin: 30px;
+        font-size: large;
+    }
 
     section {
         padding: 20px;
@@ -39,28 +44,44 @@
         text-align: center; /* Center the text within grid items */
         width: 400px; /* Adjust the width of the grid items as needed */
         margin: 10px; /* Add margin around the grid items */
+        transition: background-color 0.3s; /* Smooth transition for background-color change */
+        cursor: pointer; /* Show pointer cursor on hover */
+    }
+
+    .grid-item:hover {
+        background-color: #555; /* Change background-color on hover */
+        color: #fff; /* Change text color on hover */
     }
 </style>
+<script>
+    function playSound() {
+        var audio = new Audio('applefunk.mp3'); /* Create a new audio element with the sound file */
+        audio.play(); /* Play the sound */
+    }
+</script>
 </head>
 <body>
 <header>
     <h1>Add Your Own Webcam</h1>
     <a href="listview.html"><button>Camera List</button></a>
 </header>
-
+<div>
+    <p>You have the option to purchase one of our recommended cameras for streaming or set up a different webcam or camera. You can find helpful links in our help and support section to guide you through the setup process for streaming on this site. We suggest using software such as Yawcam or ContaCam to share your webcam's feed with us. Additionally, you may be able to use other camera brands like Sony by using HTML embedding. It's important to note that we only allow cameras that do not invade anyone's privacy. For instance, you can share views of a street or driveway, but not of private areas like a living room or kitchen.
+    </p>
+</div>
 <section id="recommended-cameras">
     <h2>Recommended Cameras</h2>
     <div class="camera-container">
         <div class="left">
             <img src="ptzcam1.jpg" height="200">
-            <h3>HIKVISION 4 MP ColorVu Speed Dome Camera DS-2DE3A400BW-DE(F1)(T5)</h3>
-            <a href=""><button>Buy Now</button></a>
+            <h3>Hikvision PTZ Dome IP Camera</h3>
+            <a href=""><button onclick="playSound()">Buy Now</button></a>
             <!-- Add your Hikvision PTZ Dome IP Camera information here -->
         </div>
         <div class="right">
             <img src="staiccam1.jpg" height="200">
-            <h3>HikVision 4 MP AcuSense Fixed Turret Camera DS-2CD2346G2-I F2.8</h3>
-            <a href=""><button>Buy Now</button></a>
+            <h3>Hikvision Turret IP Camera</h3>
+            <a href=""><button onclick="playSound()">Buy Now</button></a>
             <!-- Add your Hikvision Turret IP Camera information here -->
         </div>
     </div>
@@ -68,21 +89,21 @@
 </section>
 
 <section id="help-support">
-    <h2>Help and Support</h2>
+    <h2>Help and Support (Camera Hardware & Computer Software)</h2>
     <div class="grid-container">
-        <div class="grid-item">
-            <h3>Setting Up Your Camera</h3>
+        <div class="grid-item" onmouseover="playSound()">
+            <h3>Setting Up Your Camera Or Software</h3>
             <!-- Add content for setting up your camera here -->
         </div>
-        <div class="grid-item">
-            <h3>Configuring Your Camera</h3>
+        <div class="grid-item" onmouseover="playSound()">
+            <h3>Configuring Your Camera Or Software</h3>
             <!-- Add content for configuring your camera here -->
         </div>
-        <div class="grid-item">
+        <div class="grid-item" onmouseover="playSound()">
             <h3>Port Forwarding</h3>
             <!-- Add content for port forwarding here -->
         </div>
-        <div class="grid-item">
+        <div class="grid-item" onmouseover="playSound()">
             <h3>Sharing the Live Feed</h3>
             <!-- Add content for sharing the live feed here -->
         </div>
