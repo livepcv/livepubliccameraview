@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: black;
+        padding: 30px;
+        color: white;
+    }
+
+    section {
+        padding: 20px;
+        text-align: center; /* Center the text within sections */
+    }
+
+    .divider {
+        margin: 20px 0;
+        border-top: 1px solid #ccc;
+    }
+
+    .camera-container {
+        display: flex;
+        justify-content: space-between; /* Add space between the cameras */
+    }
+
+    .left {
+        width: 50%; /* Take up 50% of the container width */
+    }
+
+    .right {
+        width: 50%; /* Take up 50% of the container width */
+    }
+
+    .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center the grid container horizontally */
+    }
+
+    .grid-item {
+        background-color: #f2f2f2;
+        padding: 20px;
+        text-align: center; /* Center the text within grid items */
+        width: 400px; /* Adjust the width of the grid items as needed */
+        margin: 10px; /* Add margin around the grid items */
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Add Your Own Webcam</h1>
+</header>
+
+<section id="recommended-cameras">
+    <h2>Recommended Cameras</h2>
+    <div class="camera-container">
+        <div class="left">
+            <img src="ptzcam1.jpg">
+            <h3>HIKVISION 4 MP ColorVu Speed Dome Camera DS-2DE3A400BW-DE(F1)(T5)</h3>
+            <a href=""><button>Buy Now</button></a>
+            <!-- Add your Hikvision PTZ Dome IP Camera information here -->
+        </div>
+        <div class="right">
+            <img src="staiccam1.jpg">
+            <h3>Hikvision indoor 5MP ColorVu Fixed Lens Turret Camera, 20m White Light, IP67 (DS-2CE72HFT-F28 2.8mm)            </h3>
+            <a href=""><button>Buy Now</button></a>
+            <!-- Add your Hikvision Turret IP Camera information here -->
+        </div>
+    </div>
+    <hr class="divider">
+</section>
+
+<section id="help-support">
+    <h2>Help and Support</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h3>Setting Up Your Camera</h3>
+            <!-- Add content for setting up your camera here -->
+        </div>
+        <div class="grid-item">
+            <h3>Configuring Your Camera</h3>
+            <!-- Add content for configuring your camera here -->
+        </div>
+        <div class="grid-item">
+            <h3>Port Forwarding</h3>
+            <!-- Add content for port forwarding here -->
+        </div>
+        <div class="grid-item">
+            <h3>Sharing the Live Feed</h3>
+            <!-- Add content for sharing the live feed here -->
+        </div>
+    </div>
+</section>
+
+<footer>
+    <!-- Add your footer content here -->
+</footer>
+</body>
+</html>
